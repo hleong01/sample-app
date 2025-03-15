@@ -21,7 +21,7 @@ jobs:
       uses: borales/actions-yarn@v4
       with:
         cmd: install
-      -name: Build prod bundle
+    - name: Build prod bundle
       uses: borales/actions-yarn@v4
       with:
         cmd: build:prod
