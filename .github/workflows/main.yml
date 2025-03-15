@@ -20,11 +20,11 @@ jobs:
     - name: Run install
       uses: borales/actions-yarn@v4
       with:
-        cmd: install
-    - name: Build prod bundle
-      uses: borales/actions-yarn@v4
-      with:
-        cmd: build:prod
+        cmd: install --production
+          #- name: Build prod bundle
+          #uses: borales/actions-yarn@v4
+          #with:
+          #cmd: build:prod
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
